@@ -15,6 +15,11 @@ class Operacoes {
     return pow(base, expoente);
   }
 
+  /// somente numeros inteiros podem ser classificados como par ou impar
+  /// 
+  /// parametro: valor inteiro -> ex isPar(43)
+  /// 
+  /// retorno: boolean (true or false)
   bool isPar(int valor) {
     return (valor % 2) == 0;
   }
