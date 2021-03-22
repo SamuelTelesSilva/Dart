@@ -1,19 +1,22 @@
 import 'dart:math';
 
 class Operacoes {
-  
-  dynamic resultado;
+  //Nova forma usando o dynamic nos metodos
 
-  void adicao(valorX, valorY) {
-    resultado = valorX + valorY;
+  dynamic adicao(var valorX, var valorY) {
+    return valorX + valorY;
   }
 
-  void multiplicacao(valorX, valorY) {
-    resultado = valorX * valorY;
+  dynamic multiplicacao(var valorX, var valorY) {
+    return valorX * valorY;
   }
 
-  void potencia(valorX, valorY) {
-    resultado = pow(valorX, valorY);
+  dynamic potencia(var base, int expoente) {
+    return pow(base, expoente);
+  }
+
+  bool isPar(int valor) {
+    return (valor % 2) == 0;
   }
 
 }
