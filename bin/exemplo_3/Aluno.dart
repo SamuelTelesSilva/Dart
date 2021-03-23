@@ -4,8 +4,8 @@ class Aluno {
   int _idade;
 
   //construtor
-  
-  Aluno(String nome, String email, int idade) {
+
+  Aluno({String nome, String email, int idade}) { //quando coloca {} fala que é opcional
     _nome = nome;
     _email = email;
     _idade = idade;
